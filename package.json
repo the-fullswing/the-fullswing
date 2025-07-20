@@ -8,5 +8,5 @@
     "docs:preview": "vitepress preview",
     "generate-index": "node scripts/generate-index.js"
   },
-  "packageManager": "pnpm@10"
+  "packageManager": "pnpm@10.6.3"
 }
