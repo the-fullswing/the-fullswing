@@ -15,9 +15,9 @@ hero:
       link: /posts/
 
 features:
-  - title: DSL 이란?
-    details: 코틀린 DSL의 핵심 개념과 실제 구현 방법을 단계별로 배우는 가이드 - 수신 객체 지정 람다부터 HTML 폼 생성까지
-    link: "/posts/2025/07/0718-HyunJaae"
+  - title: 무신사 무진장 힘들었던 개발 이야기
+    details: 무신사 무진장 세일 개발 이야기
+    link: "/posts/2025/07/0720-suchanmyoung"
   - title: 마이그레이션 전략
     details: 토스의 지속 가능한 마이그레이션 전략 - Strangler Fig Pattern으로 안전하게 시스템을 전환하는 방법
     link: "/posts/2025/07/0718-jglee96"
