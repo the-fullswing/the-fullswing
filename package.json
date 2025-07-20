@@ -7,5 +7,6 @@
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
     "generate-index": "node scripts/generate-index.js"
-  }
+  },
+  "packageManager": "pnpm@10"
 }
