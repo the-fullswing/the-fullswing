@@ -36,6 +36,10 @@ export default defineConfig({
                 text: "마이그레이션 전략",
                 link: "/posts/2025/07/0718-jglee96",
               },
+              {
+                text: "무신사 무진장 세일",
+                link: "/posts/2025/07/0720-suchanmyoung",
+              },
             ],
           },
         ],
