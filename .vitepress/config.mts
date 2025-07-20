@@ -18,7 +18,7 @@ export default defineConfig({
             items: [
               {
                 text: "코틀린 코루틴을 배워야 하는 이유",
-                link: "/posts/2025/07/0716-Hyunjaae",
+                link: "/posts/2025/07/0716-hyunjaae",
               },
               {
                 text: "선물하기 시스템의 상품 재고는 어떻게 관리되어질까?",
@@ -30,7 +30,7 @@ export default defineConfig({
               },
               {
                 text: "DSL 이란?",
-                link: "/posts/2025/07/0718-Hyunjaae",
+                link: "/posts/2025/07/0718-hyunjaae",
               },
               {
                 text: "마이그레이션 전략",
