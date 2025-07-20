@@ -1,5 +1,6 @@
 # vitepress
-.vitepress/
+.vitepress/cache
+.vitepress/dist
 !.vitepress/config.mts
 
 
