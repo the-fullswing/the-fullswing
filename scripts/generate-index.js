@@ -71,7 +71,7 @@ function generateMonthIndex(files, outputPath, title) {
   }
 
   content += `\n## 전체 아카이브\n\n`;
-  content += `[← 전체 포스트 목록으로 돌아가기](/)\n`;
+  content += `[← 전체 포스트 목록으로 돌아가기](/posts/)\n`;
 
   fs.writeFileSync(outputPath, content);
   console.log(`Generated: ${outputPath}`);
@@ -103,7 +103,7 @@ function generateMainIndex(folders, outputPath) {
   }
 
   content += `## 홈으로 돌아가기\n\n`;
-  content += `[← 홈으로 돌아가기]/)\n`;
+  content += `[← 홈으로 돌아가기](/)\n`;
 
   fs.writeFileSync(outputPath, content);
   console.log(`Generated: ${outputPath}`);
