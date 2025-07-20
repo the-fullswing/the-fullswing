@@ -41,7 +41,7 @@ export default defineConfig({
                 link: "/posts/2025/07/0720-jdalma",
               },
               {
-                text: "무신사 무진장 세일",
+                text: "무진장 힘들었지만 무진장 성장한 개발 이야기",
                 link: "/posts/2025/07/0720-suchanmyoung",
               },
             ],
