@@ -37,6 +37,10 @@ export default defineConfig({
                 link: "/posts/2025/07/0718-jglee96",
               },
               {
+                text: "보상 트랜잭션으로 분산 환경에서도 안전하게 환전하기",
+                link: "/posts/2025/07/0720-jdalma",
+              },
+              {
                 text: "무신사 무진장 세일",
                 link: "/posts/2025/07/0720-suchanmyoung",
               },
