@@ -9,6 +9,9 @@
 - [0716 jglee96](./0716-jglee96.md)
 - [0718 hyunjaae](./0718-hyunjaae.md)
 - [0718 jglee96](./0718-jglee96.md)
+- [0720 jdalma](./0720-jdalma.md)
+- [0720 suchanmyoung](./0720-suchanmyoung.md)
+- [0722 jglee96](./0722-jglee96.md)
 
 ## 전체 아카이브
 
