@@ -16,20 +16,37 @@
           />
           {{ author }}
         </a>
-        <span v-if="date" class="last-updated">{{ date }}</span>
+        <span v-if="date" class="last-updated">{{ formattedDate }}</span>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { computed } from "vue";
+
 interface Props {
   title: string;
   author: string;
   date?: string;
 }
 
-defineProps<Props>();
+const props = defineProps<Props>();
+
+const formattedDate = computed(() => {
+  if (!props.date) return "";
+
+  try {
+    const date = new Date(props.date);
+    return date.toLocaleDateString("ko-KR", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+  } catch {
+    return props.date;
+  }
+});
 </script>
 
 <style scoped>
