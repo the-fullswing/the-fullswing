@@ -14,3 +14,17 @@ pnpm dev
 # 빌드
 pnpm build
 ```
+
+## 포스트 업로드 규칙
+
+1. Markdown 형식으로 글 작성
+2. frontmatter 3개 추가: `title`, `author`, `date` (**YYYY-MM-DD** 형식)
+3. 제목 부분에 `PostHeader` 컴포넌트 추가
+
+```js
+<PostHeader
+  :title="$frontmatter.title"
+  :author="$frontmatter.author"
+  :date="$frontmatter.date"
+/>
+```
