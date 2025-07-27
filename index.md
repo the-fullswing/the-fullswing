@@ -15,13 +15,16 @@ hero:
       link: /posts/
 
 features:
-  - title: 무신사 무진장 힘들었던 개발 이야기
-    details: 무신사 무진장 세일 개발 이야기
-    link: "/posts/2025/07/0720-suchanmyoung"
-  - title: 마이그레이션 전략
-    details: 토스의 지속 가능한 마이그레이션 전략 - Strangler Fig Pattern으로 안전하게 시스템을 전환하는 방법
-    link: "/posts/2025/07/0718-jglee96"
-  - title: 선물하기 시스템의 상품 재고는 어떻게 관리되어질까?
-    details: 배민 선물하기 시스템의 재고 관리 설계 - Redis와 RDB를 활용한 동시성 제어와 재고 히스토리 관리
-    link: "/posts/2025/07/0716-jdalma"
+  - title: suchanmyoung
+    details: Backend Developer
+    link: https://github.com/suchanmyoung
+  - title: jglee96
+    details: Frontend Developer
+    link: https://github.com/jglee96
+  - title: HyunJaae
+    details: Backend Developer
+    link: https://github.com/HyunJaae
+  - title: jdalma
+    details: Backend Developer
+    link: https://github.com/jdalma
 ---
