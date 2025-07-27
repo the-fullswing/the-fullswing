@@ -2,10 +2,24 @@
 
 개발자들이 학습한 기술 아티클과 경험을 정리한 포스트들입니다.
 
-## 연도별 포스트
+<script setup>
+import { data } from './posts.data.mts'
+</script>
 
-### 2025년
-- [07월 포스트](./2025/07/) - 2025/07 폴더의 포스트들
+<div class="year-list">
+  <div v-for="yearData in data.yearMonthData" :key="yearData.year" class="year-item">
+    <h3>{{ yearData.year }}년</h3>
+    <div class="month-list">
+      <a 
+        v-for="month in yearData.months" 
+        :key="month"
+        :href="`/posts/${yearData.year}/${month}/`"
+      >
+        {{ month }}월
+      </a>
+    </div>
+  </div>
+</div>
 
 ## 홈으로 돌아가기
 

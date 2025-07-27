@@ -1,4 +1,14 @@
-# DSL 이란?
+---
+title: DSL 이란?
+author: HyunJaae
+date: 2025-07-20
+---
+
+<PostHeader 
+  :title="$frontmatter.title"
+  :author="$frontmatter.author"
+  :date="$frontmatter.date"
+/>
 
 ## 정의
 
@@ -24,11 +34,11 @@ form {
 ```kotlin
 class Form {
 	private val inputs = mutableListOf<String>()
-	
+
 	fun input(name: String) {
 		inputs.add(name)
 	}
-	
+
 	fun render(): String {
 		return inputs.joinToString("\n") { "input name=\"$it\" />" }
 	}
@@ -56,7 +66,7 @@ fun main() {
 		input("username") // this.input("username")과 같음. 여기서 this는 수신 객체인 Form
 		input("password")
 	}
-	
+
 	println(myForm.render())
 }
 
@@ -83,16 +93,15 @@ val sb = StringBuilder().apply {
 ```
 
 > 여기서 `apply { … }` 안에서 this 는 StringBuilder임
-그래서 this.append(…) 대신 append(…) 이렇게 쓸 수 있음
-> 
+> 그래서 this.append(…) 대신 append(…) 이렇게 쓸 수 있음
 
 StringBuilder 가 수신 객체, `{ append(...) }` 이 블록이 수신 객체를 받아서 실행되는 람다
 
 ### 일반 람다와의 차이
 
-| 구분 | 형태 | 설명 |
-| --- | --- | --- |
-| 일반 람다 | () → Unit | 아무것도 넘겨받지 않음 |
+| 구분                | 형태        | 설명                             |
+| ------------------- | ----------- | -------------------------------- |
+| 일반 람다           | () → Unit   | 아무것도 넘겨받지 않음           |
 | 수신 객체 있는 람다 | T.() → Unit | T 타입 객체를 this로 갖고 실행함 |
 
 ```kotlin
@@ -116,13 +125,14 @@ withReceiver {
 
 ### 스코프 함수에서의 수신 객체 지정 람다
 
-| **함수** | **수신 객체?** | **리턴값** | **주로 쓰는 상황** |
-| --- | --- | --- | --- |
-| let | ❌ 없음 ((T) -> R) | 블록의 마지막 값 | null-safe 실행, 변형 |
-| run | ✅ 있음 (T.() -> R) | 블록의 마지막 값 | this 기반 블록 실행 |
-| apply | ✅ 있음 (T.() -> Unit) | 수신 객체 자기 자신 | 객체 초기화 |
-| also | ❌ 있음 ((T) -> Unit) | 수신 객체 자기 자신 | 중간 처리, 디버깅 |
-| with(obj) {} | ✅ 있음 (T.() -> R) | 블록의 마지막 값 | 기존 객체에 작업 |
+| **함수**     | **수신 객체?**         | **리턴값**          | **주로 쓰는 상황**   |
+| ------------ | ---------------------- | ------------------- | -------------------- |
+| let          | ❌ 없음 ((T) -> R)     | 블록의 마지막 값    | null-safe 실행, 변형 |
+| run          | ✅ 있음 (T.() -> R)    | 블록의 마지막 값    | this 기반 블록 실행  |
+| apply        | ✅ 있음 (T.() -> Unit) | 수신 객체 자기 자신 | 객체 초기화          |
+| also         | ❌ 있음 ((T) -> Unit)  | 수신 객체 자기 자신 | 중간 처리, 디버깅    |
+| with(obj) {} | ✅ 있음 (T.() -> R)    | 블록의 마지막 값    | 기존 객체에 작업     |
+
 - run
 
 ```kotlin
