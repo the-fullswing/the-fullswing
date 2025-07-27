@@ -5,9 +5,9 @@ date: 2025-07-27
 ---
 
 <PostHeader
-:title="$frontmatter.title"
-:author="$frontmatter.author"
-:date="$frontmatter.date"
+  :title="$frontmatter.title"
+  :author="$frontmatter.author"
+  :date="$frontmatter.date"
 />
 
 > **코틀린의 시퀀스**는 List나 Set과 같은 **컬렉션이랑 비슷한 개념**이지만, **필요할 때마다 값을 하나씩 계산**하는 **지연(lazy) 처리**를 한다. (* 시퀀스보다 더 좋은 방법이 플로우(Flow), 뒤에서 배운다고 함)
@@ -33,10 +33,9 @@ fun main() {
 ```
 
 위 코드에서 사용한 sequence 함수는 짧은 DSL(Domain-Sepecific Language, 도메인 전용 언어) 코드이며
+인자는 수신 객체 지정 람다 함수(suspend `SequenceScope<T>`.() → Unit)이다.
 
-인자는 수신 객체 지정 람다 함수(suspend SequenceScope<T>.() → Unit)이다.
-
-람다 내부에서 수신 객체인 this 는 SequenceScope<T>를 가리키며 이 객체는 `yield` 함수를 가지고 있다.
+람다 내부에서 수신 객체인 this 는 `SequenceScope<T>`를 가리키며 이 객체는 `yield` 함수를 가지고 있다.
 
 this 가 암시적으로 사용되므로 `yield(1)` 을 호출하면 `this.yield(1)` 을 호출하는 것과 동일하다.
 
@@ -45,7 +44,7 @@ this 가 암시적으로 사용되므로 `yield(1)` 을 호출하면 `this.yield
 public fun <T> sequence(block: suspend SequenceScope<T>.() -> Unit): Sequence<T>
 
 // SequenceScope 클래스
-public abstract class SequenceScope<int T> {
+public abstract class SequenceScope<T> {
 	suspend fun yield(value: T): Unit
 	suspend fun yieldAll(iterator: Iterator<T>): Unit
 	...
@@ -94,7 +93,7 @@ fun main() {
 val fibonacci: Sequence<BigInteger> = sequence {
 	var first = 0.toBigInteger()
 	var second = 1.toBigInteger()
-	while (ture) {
+	while (true) {
 		yield(first)
 		val temp = first
 		first += second
@@ -112,11 +111,11 @@ fun main() {
 
 ```kotlin
 fun randorrNumbers(
-	seed: Long = System.currentTimeMiuis()
-): Sequence=zlnt> = sequence {
-	val. random = Random(seed)
+	seed: Long = System.currentTimeMillis()
+): Sequence<Int> = sequence {
+	val random = Random(seed)
 	while (true) {
-		yield(random.nextlntU)
+		yield(random.nextInt())
 	}
 }
 ```
