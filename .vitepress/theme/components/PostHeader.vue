@@ -16,7 +16,7 @@
           />
           {{ author }}
         </a>
-        <span v-if="lastUpdated" class="last-updated">{{ lastUpdated }}</span>
+        <span v-if="date" class="last-updated">{{ date }}</span>
       </div>
     </div>
   </div>
@@ -26,7 +26,7 @@
 interface Props {
   title: string;
   author: string;
-  lastUpdated?: string;
+  date?: string;
 }
 
 defineProps<Props>();

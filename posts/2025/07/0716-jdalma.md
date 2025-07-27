@@ -1,13 +1,13 @@
 ---
 title: 선물하기 시스템의 상품 재고는 어떻게 관리되어질까?
 author: jdalma
-lastUpdated: 2025.07.17 01:37
+date: 2025-07-17T00:00:00.000Z
 ---
 
 <PostHeader 
   :title="$frontmatter.title"
   :author="$frontmatter.author"
-  :lastUpdated="$frontmatter.lastUpdated"
+  :date="$frontmatter.date"
 />
 
 https://techblog.woowahan.com/2709/

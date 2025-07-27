@@ -1,13 +1,13 @@
 ---
 title: 보상 트랜잭션으로 분산 환경에서도 안전하게 환전하기
 author: jdalma
-lastUpdated: 2025.07.20 17:14
+date: 2025-07-20
 ---
 
 <PostHeader 
   :title="$frontmatter.title"
   :author="$frontmatter.author"
-  :lastUpdated="$frontmatter.lastUpdated"
+  :date="$frontmatter.date"
 />
 
 영상 : https://www.youtube.com/watch?v=xpwRTu47fqY

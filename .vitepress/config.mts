@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-import { generateSidebar } from "./utils/sidebar";
+import { generateSidebar } from "vitepress-sidebar";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -10,11 +10,11 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [{ text: "Home", link: "/" }],
 
-    sidebar: [
-      {
-        text: "posts",
-        items: await generateSidebar(),
-      },
-    ],
+    sidebar: generateSidebar({
+      excludeByGlobPattern: ["index.md"],
+      useTitleFromFrontmatter: true,
+      sortMenusByFrontmatterDate: true,
+      sortMenusOrderByDescending: true,
+    }),
   },
 });

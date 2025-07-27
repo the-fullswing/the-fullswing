@@ -1,13 +1,13 @@
 ---
 title: DSL 이란?
 author: HyunJaae
-lastUpdated: 2025.07.20 03:33
+date: 2025-07-20
 ---
 
 <PostHeader 
   :title="$frontmatter.title"
   :author="$frontmatter.author"
-  :lastUpdated="$frontmatter.lastUpdated"
+  :date="$frontmatter.date"
 />
 
 ## 정의

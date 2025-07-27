@@ -1,13 +1,13 @@
 ---
 title: 무진장 힘들었지만 무진장 성장한 개발 이야기
 author: suchanmyoung
-lastUpdated: 2025.07.20 17:17
+date: 2025-07-20
 ---
 
 <PostHeader 
   :title="$frontmatter.title"
   :author="$frontmatter.author"
-  :lastUpdated="$frontmatter.lastUpdated"
+  :date="$frontmatter.date"
 />
 
 - [MUSINSA tech](https://medium.com/musinsa-tech/%EB%AC%B4%EC%A7%84%EC%9E%A5-%ED%9E%98%EB%93%A4%EC%97%88%EC%A7%80%EB%A7%8C-%EB%AC%B4%EC%A7%84%EC%9E%A5-%EC%84%B1%EC%9E%A5%ED%95%9C-%EA%B0%9C%EB%B0%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0-e445888579a9)
