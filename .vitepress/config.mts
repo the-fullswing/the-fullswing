@@ -16,5 +16,8 @@ export default defineConfig({
       sortMenusByFrontmatterDate: true,
       sortMenusOrderByDescending: true,
     }),
+    search: {
+      provider: "local",
+    },
   },
 });
