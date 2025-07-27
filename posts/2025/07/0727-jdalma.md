@@ -1,4 +1,14 @@
-# 무진장 힘들었지만 무진장 성장한 개발 이야기
+---
+title: 무진장 힘들었지만 무진장 성장한 개발 이야기
+author: jdalma
+date: 2025-07-27
+---
+
+<PostHeader 
+  :title="$frontmatter.title"
+  :author="$frontmatter.author"
+  :date="$frontmatter.date"
+/>
 
 ## 상황
 
@@ -52,7 +62,7 @@
     - 이때 서킷 브레이커 패턴을 적용하여 장애가 발생한 서비스에 대한 호출을 차단했다.
     - 데이터 일관성은 SAGA 패턴으로 실패 보상 트랜잭션을 활용하여 서비스간 의존도를 줄이고, 확장성과 안정성을 강화할 수 있었다.
 
-![sns.webp](./0727-jdalma1.webp)
+![sns.webp](./0727-jdalma-1.webp)
 
 - **이벤트 기반 아키텍처로의 도약, 리소스 분산**
     - 주문 처리의 성능 최적화를 위해 필수 수행 영역과 비필수 수행 영역을 구분하여, 비필수 영역은 SNS, SQS, Lambda 비동기 처리로 전환했다.
