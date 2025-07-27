@@ -1,9 +1,14 @@
 ---
 title: DSL 이란?
 author: HyunJaae
+lastUpdated: 2025.07.18
 ---
 
-# {{ $frontmatter.title }}
+<PostHeader 
+  :title="$frontmatter.title"
+  :author="$frontmatter.author"
+  :lastUpdated="$frontmatter.lastUpdated"
+/>
 
 ## 정의
 

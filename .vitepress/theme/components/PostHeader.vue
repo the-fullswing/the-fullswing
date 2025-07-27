@@ -1,0 +1,82 @@
+<template>
+  <div class="post-header">
+    <div class="post-title-section">
+      <h1 class="post-title">{{ title }}</h1>
+      <div class="post-meta">
+        <a
+          :href="`https://github.com/${author}`"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="author-link"
+        >
+          <img
+            src="/.vitepress/theme/assets/github-mark.svg"
+            class="github-icon"
+            alt="GitHub"
+          />
+          {{ author }}
+        </a>
+        <span v-if="lastUpdated" class="last-updated">{{ lastUpdated }}</span>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+interface Props {
+  title: string;
+  author: string;
+  lastUpdated?: string;
+}
+
+defineProps<Props>();
+</script>
+
+<style scoped>
+.post-header {
+  margin-bottom: 20px;
+}
+
+.post-title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.post-title {
+  margin: 0;
+  flex: 1;
+}
+
+.post-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.author-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #0969da;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.author-link:hover {
+  text-decoration: underline;
+}
+
+.github-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.last-updated {
+  font-size: 14px;
+  color: #656d76;
+}
+</style>

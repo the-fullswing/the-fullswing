@@ -1,9 +1,14 @@
 ---
 title: 코틀린 코루틴을 배워야 하는 이유
 author: HyunJaae
+lastUpdated: 2025.07.16
 ---
 
-# {{ $frontmatter.title }}
+<PostHeader 
+  :title="$frontmatter.title"
+  :author="$frontmatter.author"
+  :lastUpdated="$frontmatter.lastUpdated"
+/>
 
 코루틴이라는 개념은 1960년대부터 다뤄온 개념이지만 제한적으로 사용되어 옴(async/await)
 
