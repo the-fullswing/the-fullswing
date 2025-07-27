@@ -12,6 +12,7 @@
 - [0720 jdalma](./0720-jdalma.md)
 - [0720 suchanmyoung](./0720-suchanmyoung.md)
 - [0722 jglee96](./0722-jglee96.md)
+- [0727 jglee96](./0727-jglee96.md)
 
 ## 전체 아카이브
 
