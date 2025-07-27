@@ -1,7 +1,7 @@
 ---
 title: 선물하기 시스템의 상품 재고는 어떻게 관리되어질까?
 author: jdalma
-lastUpdated: 2025.07.16
+lastUpdated: 2025.07.17 01:37
 ---
 
 <PostHeader 

@@ -1,7 +1,7 @@
 ---
 title: DSL 이란?
 author: HyunJaae
-lastUpdated: 2025.07.18
+lastUpdated: 2025.07.20 03:33
 ---
 
 <PostHeader 

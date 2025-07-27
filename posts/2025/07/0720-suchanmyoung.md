@@ -1,7 +1,7 @@
 ---
 title: 무진장 힘들었지만 무진장 성장한 개발 이야기
 author: suchanmyoung
-lastUpdated: 2025.07.20
+lastUpdated: 2025.07.20 17:17
 ---
 
 <PostHeader 

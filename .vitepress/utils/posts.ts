@@ -71,7 +71,17 @@ export function sortPosts(
 ): PostData[] {
   return posts.sort((a, b) => {
     if (sortBy === "lastUpdated" && a.lastUpdated && b.lastUpdated) {
-      return a.lastUpdated.localeCompare(b.lastUpdated);
+      // 날짜를 Date 객체로 변환하여 비교
+      const dateA = new Date(a.lastUpdated);
+      const dateB = new Date(b.lastUpdated);
+
+      // 유효한 날짜인지 확인
+      if (isNaN(dateA.getTime()) || isNaN(dateB.getTime())) {
+        // 유효하지 않은 날짜는 문자열로 비교
+        return a.lastUpdated.localeCompare(b.lastUpdated);
+      }
+
+      return dateB.getTime() - dateA.getTime(); // 최신 날짜가 먼저 오도록
     }
     return a.title.localeCompare(b.title);
   });

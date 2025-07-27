@@ -1,7 +1,7 @@
 ---
 title: 보상 트랜잭션으로 분산 환경에서도 안전하게 환전하기
 author: jdalma
-lastUpdated: 2025.07.20
+lastUpdated: 2025.07.20 17:14
 ---
 
 <PostHeader 

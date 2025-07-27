@@ -1,7 +1,7 @@
 ---
 title: 코틀린 코루틴을 배워야 하는 이유
 author: HyunJaae
-lastUpdated: 2025.07.16
+lastUpdated: 2025.07.17 03:37
 ---
 
 <PostHeader 
