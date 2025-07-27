@@ -1,18 +1,20 @@
 # 2025년 07월 포스트
 
-이번 달에 작성된 기술 아티클들입니다.
+이번 달에 작성된 포스트들입니다.
 
 ## 포스트 목록
 
-- [0716 hyunjaae](./0716-hyunjaae.md)
-- [0716 jdalma](./0716-jdalma.md)
-- [0716 jglee96](./0716-jglee96.md)
-- [0718 hyunjaae](./0718-hyunjaae.md)
-- [0718 jglee96](./0718-jglee96.md)
-- [0720 jdalma](./0720-jdalma.md)
-- [0720 suchanmyoung](./0720-suchanmyoung.md)
-- [0722 jglee96](./0722-jglee96.md)
-- [0727 jglee96](./0727-jglee96.md)
+<script setup>
+import { data as posts } from './posts.data.mts'
+console.log(posts)
+</script>
+
+<div class="post-list">
+  <div v-for="post in posts" :key="post.url" class="post-item">
+    <a :href="post.url" class="post-link">{{ post.title }}</a>
+    <span class="post-author">by {{ post.author }}</span>
+  </div>
+</div>
 
 ## 전체 아카이브
 

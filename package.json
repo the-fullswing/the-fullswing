@@ -1,12 +1,12 @@
 {
   "devDependencies": {
+    "@types/node": "^24.1.0",
     "vitepress": "^1.6.3"
   },
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview",
-    "generate-index": "node scripts/generate-index.js"
+    "preview": "vitepress preview"
   },
   "packageManager": "pnpm@10.6.3"
 }
