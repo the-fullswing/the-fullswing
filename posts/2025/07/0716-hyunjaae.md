@@ -4,12 +4,6 @@ author: HyunJaae
 date: 2025-07-17
 ---
 
-<PostHeader 
-  :title="$frontmatter.title"
-  :author="$frontmatter.author"
-  :date="$frontmatter.date"
-/>
-
 코루틴이라는 개념은 1960년대부터 다뤄온 개념이지만 제한적으로 사용되어 옴(async/await)
 
 Golang 이 범용적으로 사용하면서부터 코틀린도 코루틴을 도입하는 등 변화가 시작됨

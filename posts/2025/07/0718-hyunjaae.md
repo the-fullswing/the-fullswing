@@ -4,12 +4,6 @@ author: HyunJaae
 date: 2025-07-20
 ---
 
-<PostHeader 
-  :title="$frontmatter.title"
-  :author="$frontmatter.author"
-  :date="$frontmatter.date"
-/>
-
 ## 정의
 
 DSL 은 Domain-Specific Language, 도메인 전용 언어의 줄임말

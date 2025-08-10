@@ -4,12 +4,6 @@ author: jdalma
 date: 2025-07-17T00:00:00.000Z
 ---
 
-<PostHeader 
-  :title="$frontmatter.title"
-  :author="$frontmatter.author"
-  :date="$frontmatter.date"
-/>
-
 https://techblog.woowahan.com/2709/
 
 ## 총 4가지 시스템
