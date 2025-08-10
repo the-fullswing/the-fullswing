@@ -19,12 +19,4 @@ pnpm build
 
 1. Markdown 형식으로 글 작성
 2. frontmatter 3개 추가: `title`, `author`, `date` (**YYYY-MM-DD** 형식)
-3. 제목 부분에 `PostHeader` 컴포넌트 추가
-
-```js
-<PostHeader
-  :title="$frontmatter.title"
-  :author="$frontmatter.author"
-  :date="$frontmatter.date"
-/>
-```
+3. 댓글 기능 추가를 원하지 않는다면 frontmatter에 comments: false 추가
