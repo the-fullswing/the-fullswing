@@ -15,27 +15,27 @@
 .post-item {
   margin: 10px 0;
   padding: 15px;
-  border: 1px solid #e1e5e9;
+  border: 1px solid var(--vp-c-border);
   border-radius: 8px;
-  background: #f8f9fa;
+  background: var(--vp-c-bg-alt);
   transition: all 0.2s ease;
 }
 
 .post-item:hover {
-  border-color: #0969da;
+  border-color: var(--vp-c-brand-1);
   box-shadow: 0 2px 8px rgba(9, 105, 218, 0.1);
 }
 
 .post-link {
   font-size: 18px;
   font-weight: 600;
-  color: #0969da;
+  color: var(--vp-c-brand-1);
 }
 
 .post-author {
   display: block;
   margin-top: 5px;
-  color: #656d76;
+  color: var(--vp-c-text-2);
   font-size: 14px;
 }
 
@@ -47,14 +47,14 @@
 .year-item {
   margin: 20px 0;
   padding: 20px;
-  border: 1px solid #e1e5e9;
+  border: 1px solid var(--vp-c-border);
   border-radius: 8px;
-  background: #f8f9fa;
+  background: var(--vp-c-bg-alt);
 }
 
 .year-item h3 {
   margin: 0 0 15px 0;
-  color: #24292f;
+  color: var(--vp-c-text-1);
   font-size: 24px;
 }
 
