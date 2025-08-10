@@ -47,7 +47,6 @@ const postsBySelected = computed(() => authorsMap.value.get(targetAuthor.value) 
     </p>
   </div>
   <div v-else>
-    <h1>작성자: {{ targetAuthor }}</h1>
     <p>
       다른 작성자 보기:
       <span v-for="name in authorList" :key="name" style="margin-right: 8px;">
