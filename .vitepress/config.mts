@@ -11,7 +11,7 @@ export default defineConfig({
     nav: [{ text: "Home", link: "/" }],
 
     sidebar: generateSidebar({
-      excludeByGlobPattern: ["index.md"],
+      excludeByGlobPattern: ["index.md", "README.md"],
       useTitleFromFrontmatter: true,
       sortMenusByFrontmatterDate: true,
       sortMenusOrderByDescending: true,

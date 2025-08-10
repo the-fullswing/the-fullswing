@@ -3,17 +3,8 @@
     <div class="post-title-section">
       <h1 class="post-title">{{ title }}</h1>
       <div class="post-meta">
-        <a
-          :href="`https://github.com/${author}`"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="author-link"
-        >
-          <img
-            src="/.vitepress/theme/assets/github-mark.svg"
-            class="github-icon"
-            alt="GitHub"
-          />
+        <a :href="`https://github.com/${author}`" target="_blank" rel="noopener noreferrer" class="author-link">
+          <img src="/.vitepress/theme/assets/github-mark.svg" class="github-icon" alt="GitHub" />
           {{ author }}
         </a>
         <span v-if="date" class="last-updated">{{ formattedDate }}</span>
