@@ -4,12 +4,6 @@ author: HyunJaae
 date: 2025-07-28
 ---
 
-<PostHeader
-  :title="$frontmatter.title"
-  :author="$frontmatter.author"
-  :date="$frontmatter.date"
-/>
-
 ## 중단 함수
 
 **중단 함수는 코틀린 코루틴의 핵심**이다. **중단이 가능하다는 건 코틀린 코루틴의 다른 모든 개념의 기초가 되는 필수적인 요소이다.**
@@ -31,9 +25,9 @@ date: 2025-07-28
 ```kotlin
 suspend fun main() {
 	println("Before")
-	
+
 	suspendCoroutine<Unit> { }
-	
+
 	printlng("After")
 }
 ```
@@ -45,11 +39,11 @@ suspend fun main() {
 ```kotlin
 suspend fun main() {
 	println("Before")
-	
+
 	suspendCoroutine<Unit> { continuation ->
 		println("Before too")
 	}
-	
+
 	printlng("After")
 }
 
@@ -62,11 +56,11 @@ suspend fun main() {
 ```kotlin
 suspend fun main() {
 	println("Before")
-	
+
 	suspendCoroutine<Unit> { continuation ->
 		continuation.resume(Unit)
 	}
-	
+
 	printlng("After")
 }
 
@@ -108,11 +102,11 @@ fun continueAfterSecond(continueation: Continuation<Unit>) {
 
 suspend fun main() {
 	println("Before")
-	
+
 	suspendCoroutine<Unit> { continuation ->
 		continueAfterSecond(continuation)
 	}
-	
+
 	println("After")
 }
 
@@ -128,16 +122,16 @@ private val executor =
 	Executors.newSingleThreadScheduledExecutor {
 		Thread(it, "scheduler").apply { isDaemon = true }
 	}
-	
+
 suspend fun main() {
 	println("Before")
-	
+
 	suspendCoroutine<Unit> { continuation ->
 		executor.schedule({
 			continuation.resume(Unit)
 		}, 1000, TimeUnit.MILLISECONDS)
 	}
-	
+
 	println("After")
 }
 // Before
@@ -152,7 +146,7 @@ private val executor =
 	Executors.newSingleThreadScheduledExecutor {
 		Thread(it, "scheduler").apply { isDaemon = true }
 	}
-	
+
 suspend fun delay(timeMillis: Long): Unit =
 	suspendCoroutine<Unit> { cont ->
 		executor.schedule({
@@ -162,9 +156,9 @@ suspend fun delay(timeMillis: Long): Unit =
 
 suspend fun main() {
 	println("Before")
-	
+
 	delay(1000)
-	
+
 	println("After")
 }
 // Before

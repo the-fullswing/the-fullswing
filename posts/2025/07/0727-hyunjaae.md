@@ -4,13 +4,7 @@ author: HyunJaae
 date: 2025-07-27
 ---
 
-<PostHeader
-  :title="$frontmatter.title"
-  :author="$frontmatter.author"
-  :date="$frontmatter.date"
-/>
-
-> **코틀린의 시퀀스**는 List나 Set과 같은 **컬렉션이랑 비슷한 개념**이지만, **필요할 때마다 값을 하나씩 계산**하는 **지연(lazy) 처리**를 한다. (* 시퀀스보다 더 좋은 방법이 플로우(Flow), 뒤에서 배운다고 함)
+> **코틀린의 시퀀스**는 List나 Set과 같은 **컬렉션이랑 비슷한 개념**이지만, **필요할 때마다 값을 하나씩 계산**하는 **지연(lazy) 처리**를 한다. (\* 시퀀스보다 더 좋은 방법이 플로우(Flow), 뒤에서 배운다고 함)
 
 ### **시퀀스 특징**
 

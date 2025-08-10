@@ -4,12 +4,6 @@ author: jdalma
 date: 2025-07-20
 ---
 
-<PostHeader 
-  :title="$frontmatter.title"
-  :author="$frontmatter.author"
-  :date="$frontmatter.date"
-/>
-
 영상 : https://www.youtube.com/watch?v=xpwRTu47fqY
 
 양방향 무료 환전! MSA 환경에서 서로 데이터베이스도 다르게 보고 있을 때 트랜잭션을 어떻게 지켜내야할까?
