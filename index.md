@@ -17,14 +17,14 @@ hero:
 features:
   - title: suchanmyoung
     details: Backend Developer
-    link: https://github.com/suchanmyoung
+    link: /authors/suchanmyoung/
   - title: jglee96
     details: Frontend Developer
-    link: https://github.com/jglee96
+    link: /authors/jglee96/
   - title: HyunJaae
     details: Backend Developer
-    link: https://github.com/HyunJaae
+    link: /authors/HyunJaae/
   - title: jdalma
     details: Backend Developer
-    link: https://github.com/jdalma
+    link: /authors/jdalma/
 ---

@@ -15,6 +15,7 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
+import { formatDate } from "../../utils/date";
 
 interface Props {
   title: string;
@@ -28,12 +29,7 @@ const formattedDate = computed(() => {
   if (!props.date) return "";
 
   try {
-    const date = new Date(props.date);
-    return date.toLocaleDateString("ko-KR", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
+    return formatDate(props.date);
   } catch {
     return props.date;
   }
